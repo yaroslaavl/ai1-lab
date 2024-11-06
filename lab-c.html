@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map Puzzle</title>
+  <link rel="stylesheet" href="css/style4.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-image@latest/leaflet-image.js"></script>
+</head>
+<body>
+
+<div id="map-container">
+  <div id="map"></div>
+  <div id="controls">
+    <button id="location-btn">Moja lokalizacja</button>
+    <button id="download-btn-overlay">Pobierz mapę</button>
+  </div>
+</div>
+
+<div id="puzzle-container">
+  <div class="puzzle-section">
+    <h3>Mapa rastrowa:</h3>
+    <div id="puzzle-map-container" class="puzzle-map"></div>
+  </div>
+
+  <div id="puzzle-wrapper">
+    <div class="puzzle-boards">
+      <h3 class="puzzle-title">Rozproszone części:</h3>
+      <div class="puzzle-frame">
+        <div id="pieces" class="grid-container"></div>
+      </div>
+
+      <h3 class="puzzle-title">Ułóż puzzle:</h3>
+      <div class="puzzle-frame">
+        <div id="grid" class="grid-container"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/lab-c.js"></script>
+</body>
+</html>
